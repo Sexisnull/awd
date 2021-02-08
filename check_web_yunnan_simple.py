@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf8 -*-
+# docker pull nmsldd/awd-web_yunnan_simple
 
 import requests
 import time
