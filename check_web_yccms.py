@@ -38,7 +38,6 @@ def check(teamserver):
                     res = requests.get('http://' + teamserver + '/admin/?a=call&m=xhUp&type=xh', headers=headers)
                     if 'alert' in res.content:
                         print '[+normal] ' + str(teamserver) + ' upload_Interface check normal'
-                        res = requests.get('http://' + teamserver + '/search.php', headers=headers)
                         return False
                     else:
                         print "[×fail] " + str(teamserver) + " upload_Interface check fail"
